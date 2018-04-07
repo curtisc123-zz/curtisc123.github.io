@@ -4,8 +4,11 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const siteName = 'curtiscampbell';
 
+var IS_WDS = /webpack-dev-server/.test(process.env.npm_lifecycle_script);
+
 const htmlWebpack = new HtmlWebpackPlugin({
   template: './src/index.html',
+  filename: IS_WDS ? 'index.html' : './../index.html',
 });
 
 const extractSass = new ExtractTextPlugin({
