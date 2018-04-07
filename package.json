@@ -6,14 +6,28 @@
   "repository": "git@github.com:curtisc123/curtiscampbell.git",
   "author": "Curtis Campbell",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "build": "node_modules/webpack-cli/bin/webpack.js && rm dist/*.map",
+    "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "fast-sass-loader": "^1.4.1",
+    "html-webpack-plugin": "^3.2.0",
     "imagemin-webpack-plugin": "^2.1.1",
     "node-sass": "^4.8.3",
+    "style-loader": "^0.20.3",
     "ts-loader": "^4.1.0",
     "tslint": "^5.9.1",
     "tslint-loader": "^3.6.0",
     "typescript": "^2.8.1",
-    "webpack": "^4.5.0"
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
   }
 }
