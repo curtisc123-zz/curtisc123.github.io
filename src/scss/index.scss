@@ -13,7 +13,7 @@ body {
 }
 
 body {
-  background: $bgColour url('./../assets/images/background.png') no-repeat center / 100% auto;
+  background: $bgColour url('./../assets/images/background.png') no-repeat center / auto 100%;
 
   padding: 0;
   margin: 0;
@@ -41,7 +41,7 @@ body {
     background: url('./../assets/images/face.png') no-repeat center / 100% auto;
   }
 
-  @media screen and (max-width: 900px) {
+  @media only screen and (max-width: 900px) {
     text-align: center;
     flex-flow: column-reverse;
 

@@ -2545,7 +2545,7 @@ body {
   height: 100%; }
 
 body {
-  background: #a748f7 url(47294e4c6661de2d718619bf57a40143.png) no-repeat center/100% auto;
+  background: #a748f7 url(47294e4c6661de2d718619bf57a40143.png) no-repeat center/auto 100%;
   padding: 0;
   margin: 0;
   font-size: 62.5%;
@@ -2566,7 +2566,7 @@ body {
     height: 100%;
     margin: 0 0 0 40px;
     background: url(3a4e923d4645f4e704062d574d5465c3.png) no-repeat center/100% auto; }
-  @media screen and (max-width: 900px) {
+  @media only screen and (max-width: 900px) {
     .container {
       text-align: center;
       flex-flow: column-reverse; }
