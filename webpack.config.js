@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const siteName = 'curtiscampbell';
 
@@ -12,11 +11,6 @@ const htmlWebpack = new HtmlWebpackPlugin({
 const extractSass = new ExtractTextPlugin({
   filename: `${siteName}.css`,
 });
-
-const copyImages = new CopyWebpackPlugin([{
-  from: './src/assets',
-  to: 'assets'
-}]);
 
 const imagemin = new ImageminPlugin({
   test: /\.(jpe?g|png|gif|svg)$/i
@@ -50,6 +44,10 @@ module.exports = {
         })
       },
       {
+        test: /\.(|png|jpg)$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.ts?$/,
         use: 'ts-loader',
         exclude: /node_modules/
@@ -71,7 +69,6 @@ module.exports = {
   plugins: [
     htmlWebpack,
     extractSass,
-    copyImages,
     imagemin
   ],
 }

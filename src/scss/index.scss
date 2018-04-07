@@ -1,1 +1,55 @@
-@import 'header.scss';
+@import './../../node_modules/animate.css/animate.css';
+@import 'variables';
+@import 'typography';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: $bgColour url('./../assets/images/background.png') no-repeat center / 100% auto;
+
+  padding: 0;
+  margin: 0;
+
+  font-size: 62.5%;
+  font-family: $bodyFontFamily;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 $baseSpacing;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: center;
+
+  .face {
+    width: 20%;
+    height: 100%;
+    margin: 0 0 0 $baseSpacing;
+    background: url('./../assets/images/face.png') no-repeat center / 100% auto;
+  }
+
+  @media screen and (max-width: 900px) {
+    text-align: center;
+    flex-flow: column-reverse;
+
+    .face {
+      width: 100%;
+      height: 25%;
+      margin: 0 0 $baseSpacing;
+      background-size: auto 100%;
+    }
+  }
+}
