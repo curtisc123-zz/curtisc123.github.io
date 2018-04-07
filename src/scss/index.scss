@@ -38,7 +38,9 @@ body {
     width: 20%;
     height: 100%;
     margin: 0 0 0 $baseSpacing;
-    background: url('./../assets/images/face.png') no-repeat center / 100% auto;
+    background: no-repeat center / 100% auto;
+    animation: face-swap 2s step-start infinite;
+    animation-fill-mode: forwards;
   }
 
   @media only screen and (max-width: 900px) {
@@ -52,4 +54,11 @@ body {
       background-size: auto 100%;
     }
   }
+}
+
+@keyframes face-swap {
+  25% { background-image: url('./../assets/images/face.png'); }
+  50% { background-image: url('./../assets/images/face-2.png'); }
+  75% { background-image: url('./../assets/images/face-3.png'); }
+  100% { background-image: url('./../assets/images/face-4.png'); }
 }

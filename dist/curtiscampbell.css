@@ -2565,7 +2565,9 @@ body {
     width: 20%;
     height: 100%;
     margin: 0 0 0 40px;
-    background: url(3a4e923d4645f4e704062d574d5465c3.png) no-repeat center/100% auto; }
+    background: no-repeat center / 100% auto;
+    animation: face-swap 2s step-start infinite;
+    animation-fill-mode: forwards; }
   @media only screen and (max-width: 900px) {
     .container {
       text-align: center;
@@ -2575,5 +2577,15 @@ body {
         height: 25%;
         margin: 0 0 40px;
         background-size: auto 100%; } }
+
+@keyframes face-swap {
+  25% {
+    background-image: url(052989fe166d82f51a131c2814a862c4.png); }
+  50% {
+    background-image: url(cb7a63a7a08d1fd2a915fc4565aa7909.png); }
+  75% {
+    background-image: url(aac3296d5640c4600ce8f5ccdf36f21f.png); }
+  100% {
+    background-image: url(e71ba24297767e7e01b4b1eaffb4e4a4.png); } }
 
 /*# sourceMappingURL=curtiscampbell.css.map*/

@@ -5,7 +5,6 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default
 const siteName = 'curtiscampbell';
 
 const htmlWebpack = new HtmlWebpackPlugin({
-  filename: './../index.html',
   template: './src/index.html',
 });
 
