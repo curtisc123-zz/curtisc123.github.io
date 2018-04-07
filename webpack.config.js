@@ -25,7 +25,7 @@ module.exports = {
     filename: `${siteName}.js`,
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, ""),
     compress: true,
     port: 8080,
     open: true,
