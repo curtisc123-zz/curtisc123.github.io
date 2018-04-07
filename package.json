@@ -1,0 +1,9 @@
+{
+  "name": "curtiscampbell",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "main": "index.js",
+  "repository": "git@github.com:curtisc123/curtiscampbell.git",
+  "author": "Curtis Campbell",
+  "license": "MIT"
+}
