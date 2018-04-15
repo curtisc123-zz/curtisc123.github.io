@@ -2512,16 +2512,10 @@ h6 {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif; }
-  h1 span,
-  h2 span,
-  h3 span,
-  h4 span,
-  h5 span,
-  h6 span {
-    color: #2ad69b; }
 
 h1 {
-  font-size: 5rem; }
+  font-size: 5rem;
+  padding: 0 0 40px; }
 
 p {
   padding: 0 0 40px;
@@ -2530,62 +2524,136 @@ p {
   p:last-child {
     padding: 0; }
 
+ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  list-style: none; }
+
 a {
-  color: #2ad69b;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
 
+#hero.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: left; }
+  #hero.container a,
+  #hero.container .highlight {
+    color: #2ad69b; }
+  #hero.container header {
+    width: 40%; }
+  #hero.container .face {
+    width: 20%;
+    height: 500px;
+    margin: 0 0 0 40px;
+    background: no-repeat center / auto 100%;
+    animation: face-swap 2s step-start infinite;
+    animation-fill-mode: forwards;
+    display: flex;
+    align-items: center; }
+    #hero.container .face img {
+      max-width: 100%;
+      max-height: 100%;
+      display: none; }
+  @media only screen and (max-width: 900px) {
+    #hero.container {
+      text-align: center;
+      flex-flow: column-reverse; }
+      #hero.container .face {
+        width: 100%;
+        height: 250px;
+        margin: 0 0 40px;
+        display: block;
+        text-align: center; } }
+
+#about.container a,
+#about.container .highlight {
+  color: #1eadff; }
+
+#about.container p {
+  padding-left: 15%;
+  padding-right: 15%; }
+
+#timeline.container a,
+#timeline.container .highlight {
+  color: #2ad69b; }
+
+#skills.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  #skills.container a,
+  #skills.container .highlight {
+    color: #f841ff; }
+  #skills.container header {
+    width: 100%;
+    display: block; }
+  #skills.container ul {
+    width: 22%; }
+
+#contact.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; }
+  #contact.container a,
+  #contact.container .highlight {
+    color: #ffe115; }
+  #contact.container header {
+    width: 40%; }
+
+.no-pad {
+  padding: 0; }
+
+.no-margin {
+  margin: 0; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.horizontal-pad {
+  padding: 30%; }
+
 * {
   box-sizing: border-box; }
 
-html,
 body {
-  width: 100%;
-  height: 100%; }
-
-body {
-  background: #a748f7 url(47294e4c6661de2d718619bf57a40143.png) no-repeat center/auto 100%;
+  background: #a748f7;
   padding: 0;
   margin: 0;
   font-size: 62.5%;
   font-family: "Source Sans Pro", sans-serif;
-  color: white; }
+  color: white;
+  transition: background 500ms; }
+  body:before {
+    width: 100%;
+    height: 100%;
+    background: url(47294e4c6661de2d718619bf57a40143.png) no-repeat center/auto 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+    display: block; }
 
 .container {
-  width: 100%;
-  height: 100%;
+  min-height: 100vh;
   padding: 0 40px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-content: space-around;
-  align-items: center; }
-  .container .face {
-    width: 20%;
-    height: 100%;
-    margin: 0 0 0 40px;
-    background: no-repeat center / 100% auto;
-    animation: face-swap 2s step-start infinite;
-    animation-fill-mode: forwards; }
-  @media only screen and (max-width: 900px) {
-    .container {
-      text-align: center;
-      flex-flow: column-reverse; }
-      .container .face {
-        width: 100%;
-        height: 25%;
-        margin: 0 0 40px;
-        background-size: auto 100%; } }
-
-@keyframes face-swap {
-  25% {
-    background-image: url(052989fe166d82f51a131c2814a862c4.png); }
-  50% {
-    background-image: url(cb7a63a7a08d1fd2a915fc4565aa7909.png); }
-  75% {
-    background-image: url(aac3296d5640c4600ce8f5ccdf36f21f.png); }
-  100% {
-    background-image: url(e71ba24297767e7e01b4b1eaffb4e4a4.png); } }
+  position: relative;
+  z-index: 2; }
+  .container.vertical-pad {
+    padding-top: 400px;
+    padding-bottom: 400px; }
 
 /*# sourceMappingURL=curtiscampbell.css.map*/
