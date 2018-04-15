@@ -24,6 +24,7 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
+    publicPath: 'dist/',
     filename: `${siteName}.js`,
   },
   devServer: {
@@ -52,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.html?$/,
-        loader: 'html-loader'
+        loader: 'html-loader',
       },
       {
         test: /\.ts?$/,
