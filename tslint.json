@@ -1,9 +1,7 @@
 {
   "rules": {
-    "no-any": true,
     "no-empty-interface": true,
     "no-magic-numbers": true,
-    "only-arrow-functions": true,
     "curly": true,
     "no-bitwise": true,
     "no-construct": true,

@@ -1,0 +1,19 @@
+#skills.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  a,
+  .highlight {
+    color: #f841ff;
+  }
+
+  header {
+    width: 100%;
+    display: block;
+  }
+
+  ul {
+    width: 22%;
+  }
+}

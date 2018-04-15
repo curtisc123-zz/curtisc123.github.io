@@ -1,0 +1,15 @@
+#contact.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+
+  a,
+  .highlight {
+    color: #ffe115;
+  }
+
+  header {
+    width: 40%;
+  }
+}
