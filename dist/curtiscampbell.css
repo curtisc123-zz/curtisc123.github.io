@@ -2661,9 +2661,6 @@ textarea {
   background: #fff;
   border: none;
   padding: 1rem 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   font-size: 1.25rem;
   font-family: "Source Sans Pro", sans-serif;
   resize: none;
