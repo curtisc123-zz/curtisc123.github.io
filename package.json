@@ -7,7 +7,7 @@
   "author": "Curtis Campbell",
   "license": "MIT",
   "scripts": {
-    "build": "node_modules/webpack-cli/bin/webpack.js && rm dist/*.map && rm dist/index.html",
+    "build": "node_modules/webpack-cli/bin/webpack.js && rm dist/*.map",
     "start": "node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "devDependencies": {
