@@ -8,7 +8,6 @@ var IS_WDS = /webpack-dev-server/.test(process.env.npm_lifecycle_script);
 
 const htmlWebpack = new HtmlWebpackPlugin({
   template: './src/index.html',
-  filename: IS_WDS ? 'index.html' : './../index.html',
 });
 
 const extractSass = new ExtractTextPlugin({
@@ -28,7 +27,7 @@ module.exports = {
     filename: `${siteName}.js`,
   },
   devServer: {
-    contentBase: path.join(__dirname, ''),
+    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 8080,
     open: true,
