@@ -8,17 +8,30 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   <link href="dist/curtiscampbell.css" rel="stylesheet"></head>
   <body>
-    <section class="container animated bounceIn " id="hero" data-bg="#a748f7">
-      <header>
-          <h1 class="no-pad">Hello<span class="highlight">.</span></h1>
-          <p>I'm Curtis, a front end web developer and aspiring photographer in Vancouver, BC.</p>
-          <p>This is a work in progress, but feel free to look around.</p>
-      </header>
-      <div class="face">
+    <div class="background-icons hidden">
+      <img src="dist/98da63c73106c760b6bbe8761e05da10.svg" alt="Tech" />
+      <img src="dist/b300739cc8cffafd7984546d67a33950.svg" alt="Tech" />
+      <img src="dist/17e9b23834a42827bb01af0fd3579973.svg" alt="Coffee" />
+      <img src="dist/a556c5cfc0df7806f9e0019d7f4a47dd.svg" alt="Beer" />
+      <img src="dist/fc1dae9acba61d73fd5741032ce99052.svg" alt="Gaming" />
+      <img src="dist/02c6792a64970cdedc5ffb7577c0bfbf.svg" alt="Music" />
+      <img src="dist/791c8e0633fcd60b0a1d349f3707c415.svg" alt="Tech" />
+      <img src="dist/7077e4ea8e06fac04977f27ae2c563a2.svg" alt="Web" />
+      <img src="dist/ef495cffa22aae6860d236c774ee5bb1.svg" alt="Film" />
+    </div>
+    <section class="container" id="hero" data-bg="#a748f7">
+      <div class="content">
+        <header class="animated bounceIn">
+            <h1 class="no-pad">Hello<span class="highlight">.</span></h1>
+        </header>
+        <p>I'm Curtis, a front end web developer and aspiring photographer in Vancouver, BC.</p>
+        <p>This is a work in progress, but feel free to look around.</p>
+      </div>
+      <div class="face hidden">
         <img src="dist/052989fe166d82f51a131c2814a862c4.png" alt="Curtis!" />
-        <img src="dist/cb7a63a7a08d1fd2a915fc4565aa7909.png" alt="Curtis!" />
-        <img src="dist/aac3296d5640c4600ce8f5ccdf36f21f.png" alt="Curtis!" />
-        <img src="dist/e71ba24297767e7e01b4b1eaffb4e4a4.png" alt="Curtis!" />
+        <img src="dist/cb7a63a7a08d1fd2a915fc4565aa7909.png" alt="Curtis!" class="hidden" />
+        <img src="dist/aac3296d5640c4600ce8f5ccdf36f21f.png" alt="Curtis!" class="hidden" />
+        <img src="dist/e71ba24297767e7e01b4b1eaffb4e4a4.png" alt="Curtis!" class="hidden" />
       </div>
     </section>
 
@@ -74,13 +87,34 @@
     <section class="container" id="contact" data-bg="#f841ff">
       <header>
           <h1 class="animated bounceIn no-pad">Contact Me<span class="highlight">.</span></h1>
-          <p>Like what you see? Cool! I like you too. Feel free to shoot me an
-          <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a> or
-          <a href="https://www.linkedin.com/in/campbellcurtis" title="Best profile ever!" target="_blank">LinkedIn</a>.</p>
-          <p>If you want to check out some of my
-          photography and film, be sure check to
-          check out my <a href="#" target="_blank" title="Instagram">Instagram</a>.</p>
       </header>
+      <div class="content">
+        <div>
+            <p>Like what you see? Cool! I like you too. Feel free to shoot me an
+            <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a>, fill out the form or
+            <a href="https://www.linkedin.com/in/campbellcurtis" title="Best profile ever!" target="_blank">LinkedIn</a>.</p>
+            <p>If you want to check out some of my photography and film, be sure check to
+            check out my <a href="#" target="_blank" title="Instagram">Instagram</a>.</p>
+        </div>
+        <form>
+          <fieldset>
+            <label for="name">Your name</label>
+            <input type="text" name="eame" placeholder="Your name"/>
+          </fieldset>
+
+          <fieldset>
+            <label for="email">Your email</label>
+            <input type="text" name="email" placeholder="Your email"/>
+          </fieldset>
+
+          <fieldset>
+            <label for="message">What do you need?</label>
+            <input type="text" name="message" placeholder="What do you need?"/>
+          </fieldset>
+
+          <input type="submit" name="Submit" value="Send it!"/>
+        </form>
+      </div>
     </section>
   <script type="text/javascript" src="dist/curtiscampbell.js"></script></body>
 </html>

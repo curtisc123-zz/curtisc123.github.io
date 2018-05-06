@@ -8,79 +8,116 @@
     <link rel="icon" type="image/png" href="favicon.png" />
   </head>
   <body>
-    <section class="container animated bounceIn " id="hero" data-bg="#a748f7">
-      <header>
+    <div class="background-icons hidden">
+      <img src="assets/images/computer-1.svg" alt="Tech" />
+      <img src="assets/images/computer.svg" alt="Tech" />
+      <img src="assets/images/cup.svg" alt="Coffee" />
+      <img src="assets/images/drink.svg" alt="Beer" />
+      <img src="assets/images/game.svg" alt="Gaming" />
+      <img src="assets/images/music.svg" alt="Music" />
+      <img src="assets/images/phone.svg" alt="Tech" />
+      <img src="assets/images/sign.svg" alt="Web" />
+      <img src="assets/images/video.svg" alt="Film" />
+    </div>
+    <section class="container" id="hero" data-bg="#a748f7">
+      <header class="animated bounceIn">
           <h1 class="no-pad">Hello<span class="highlight">.</span></h1>
           <p>I'm Curtis, a front end web developer and aspiring photographer in Vancouver, BC.</p>
           <p>This is a work in progress, but feel free to look around.</p>
       </header>
-      <div class="face">
+      <div class="face hidden">
         <img src="assets/images/face.png" alt="Curtis!" />
-        <img src="assets/images/face-2.png" alt="Curtis!" />
-        <img src="assets/images/face-3.png" alt="Curtis!" />
-        <img src="assets/images/face-4.png" alt="Curtis!" />
+        <img src="assets/images/face-2.png" alt="Curtis!" class="hidden" />
+        <img src="assets/images/face-3.png" alt="Curtis!" class="hidden" />
+        <img src="assets/images/face-4.png" alt="Curtis!" class="hidden" />
       </div>
     </section>
 
-    <section class="container vertical-pad text-center" id="about" data-bg="#2ad69b">
-      <header>
-          <h1>A Little About Me<span class="highlight">.</span></h1>
-      </header>
-      <p>Well, who am I even? I’ve got about 10 years experience as a web developer. I
-        started my career in Kelowna BC at an agency as a designer and coder.
-        I worked on a lot of stuff there. I moved to Vancouver in 2012 to for a job
-        and for my now wife’s animation career.</p>
-      <p>I’m not just a developer though, I like lots of things. I’m an avid movie-goer
-        and asipring photographer, filmmaker and pianist. I dabble in video games, a bit of a
-        beer conniseur and I’m way too into comics and pop culture.</p>
+    <section class="container" id="about" data-bg="#2ad69b">
+      <div class="content">
+          <header>
+              <h1>A Little About Me<span class="highlight">.</span></h1>
+          </header>
+
+          <p>Well, who am I even? I’ve got about 10 years experience as a web developer. I
+              started my career in Kelowna BC at an agency as a designer and coder.
+              I worked on a lot of stuff there. I moved to Vancouver in 2012 to for a job
+              and for my now wife’s animation career.</p>
+          <p>I’m not just a developer though, I like lots of things. I’m an avid movie-goer
+            and asipring photographer, filmmaker and pianist. I dabble in video games, a bit of a
+            beer conniseur and I’m way too into comics and pop culture.</p>
+        </div>
     </section>
 
-    <!--<section class="container vertical-pad text-center" id="timeline" data-bg="#1eadff">
+    <!-- <section class="container" id="timeline" data-bg="#1eadff">
       <header>
-          <h1 class="animated bounceIn">Timeline<span class="highlight">.</span></h1>
+          <h1 class="animated bounceIn">A History Lesson<span class="highlight">.</span></h1>
       </header>
       <p>About me text</p>
-    </section>-->
+    </section> -->
 
-    <section class="container vertical-pad text-center" id="skills" data-bg="#2e46fe">
-      <header>
-          <h1 class="animated bounceIn">What Can I Do<span class="highlight">?</span></h1>
-      </header>
-      <ul>
-        <li>HTML</li>
-        <li>CSS/SCSS/Less</li>
-        <li>JS/TS</li>
-        <li>Node.js</li>
-        <li>jQuery</li>
-        <li>React/Angular/Vue</li>
-      </ul>
+    <section class="container" id="skills" data-bg="#2e46fe">
+      <div class="content">
+          <header>
+              <h1 class="animated bounceIn">What Can I Do<span class="highlight">?</span></h1>
+          </header>
+          <ul>
+            <li>HTML</li>
+            <li>CSS/SCSS/Less</li>
+            <li>JS/TS</li>
+            <li>Node.js</li>
+            <li>jQuery</li>
+            <li>React/Angular/Vue</li>
+          </ul>
 
-      <ul>
-        <li>Git</li>
-        <li>JIRA</li>
-        <li>Sketch</li>
-        <li>Photoshop</li>
-        <li>Illustrator</li>
-        <li>Premiere Pro</li>
-      </ul>
+          <ul>
+            <li>Git</li>
+            <li>JIRA</li>
+            <li>Sketch</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Premiere Pro</li>
+          </ul>
 
-      <ul>
-        <li>Mentorship</li>
-        <li>Project Management</li>
-        <li>Agile/Scrum Certified</li>
-      </ul>
+          <ul>
+            <li>Mentorship</li>
+            <li>Project Management</li>
+            <li>Agile/Scrum Certified</li>
+          </ul>
+      </div>
     </section>
 
     <section class="container" id="contact" data-bg="#f841ff">
-      <header>
-          <h1 class="animated bounceIn no-pad">Contact Me<span class="highlight">.</span></h1>
-          <p>Like what you see? Cool! I like you too. Feel free to shoot me an
-          <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a> or
-          <a href="https://www.linkedin.com/in/campbellcurtis" title="Best profile ever!" target="_blank">LinkedIn</a>.</p>
-          <p>If you want to check out some of my
-          photography and film, be sure check to
-          check out my <a href="#" target="_blank" title="Instagram">Instagram</a>.</p>
-      </header>
+      <div class="content">
+        <header>
+            <h1 class="animated bounceIn">Contact Me<span class="highlight">.</span></h1>
+        </header>
+        <div>
+            <p>Like what you see? Cool! I like you too. Feel free to shoot me an
+            <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a>, fill out the form or view
+            <a href="https://www.linkedin.com/in/campbellcurtis" title="Click for best profile ever." target="_blank">LinkedIn</a>.</p>
+            <p>If you want to check out some of my photography and film, be sure check to
+            check out my <a href="#" target="_blank" title="Instagram">Instagram</a>.</p>
+        </div>
+        <form action="https://formspree.io/campbell123@gmail.com" method="POST">
+          <fieldset>
+            <label for="name">Your name</label>
+            <input type="text" name="eame" placeholder="Your name"/>
+          </fieldset>
+
+          <fieldset>
+            <label for="email">Your email</label>
+            <input type="email" name="email" placeholder="Your email"/>
+          </fieldset>
+
+          <fieldset>
+            <label for="message">What do you need?</label>
+            <textarea name="message" placeholder="What do you need?"></textarea>
+          </fieldset>
+
+          <input type="submit" name="Submit" value="Send it!"/>
+        </form>
+      </div>
     </section>
   </body>
 </html>

@@ -1,0 +1,52 @@
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0 0 $baseSpacing / 2;
+  border: none;
+}
+
+label {
+  display: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: $baseSpacing * 1.5;
+  background: #fff;
+  border: none;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.25rem;
+  font-family: $bodyFontFamily;
+  resize: none;
+  color: #222;
+  box-shadow: 4px 4px 0 rgba(#000, 0.25);
+
+  &:active,
+  &:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.30);
+  }
+}
+
+textarea {
+  height: 10rem;
+}
+
+input[type=submit] {
+  width: auto;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+::-moz-placeholder,
+::-ms-input-placeholder,
+::-webkit-input-placeholder {
+  color: #fff;
+}

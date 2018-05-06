@@ -9,7 +9,45 @@
     color: #ffe115;
   }
 
-  header {
-    width: 40%;
+  .content {
+    > form {
+      padding: $baseSpacing 0 0;
+
+      input,
+      textarea {
+        &:active,
+        &:focus {
+          outline: 1px solid #ffe115;
+        }
+      }
+
+      input[type=submit] {
+        width: 100%;
+        color: #222;
+        background: #ffe115;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 2.5);
+        text-align: center;
+
+        &:hover,
+        &:active {
+          background: darken(#ffe115, 5%);
+        }
+      }
+    }
+
+    @include media(tablet) {
+      > div,
+      > form {
+        width: 50%;
+      }
+
+      > form {
+        padding: 0 0 0 $baseSpacing;
+
+        input[type=submit] {
+          width: auto;
+        }
+      }
+    }
   }
 }
