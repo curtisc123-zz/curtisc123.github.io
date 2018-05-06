@@ -14,21 +14,21 @@ h6 {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 0 0 $baseSpacing * 2;
 
   @include media(tablet) {
-    font-size: 7.5rem;
+    font-size: 5rem;
   }
 }
 
 p,
 ul {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin: 0;
 
   @include media(tablet) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
