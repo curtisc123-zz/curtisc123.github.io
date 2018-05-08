@@ -2516,10 +2516,11 @@ h6 {
 
 h1 {
   font-size: 3rem;
-  padding: 0 0 4.5rem; }
+  padding: 0 0 1rem; }
   @media (min-width: 768px) {
     h1 {
-      font-size: 5rem; } }
+      font-size: 5rem;
+      padding: 0 0 4.5rem; } }
 
 p,
 ul {
@@ -2745,7 +2746,7 @@ body {
       margin: 0 auto; } }
   @media (min-width: 768px) {
     .container {
-      padding: 0 2.25rem;
+      padding: 9rem 2.25rem;
       text-align: left; } }
 
 .background-icons {

@@ -66,7 +66,7 @@ body {
   }
 
   @include media(tablet) {
-    padding: 0 $baseSpacing;
+    padding: $baseSpacing * 4 $baseSpacing;
     text-align: left;
   }
 }
