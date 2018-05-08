@@ -39,7 +39,7 @@ body {
   position: relative;
   z-index: 2;
 
-  &:last-child {
+  &:last-of-type {
     padding-bottom: $baseSpacing;
   }
 

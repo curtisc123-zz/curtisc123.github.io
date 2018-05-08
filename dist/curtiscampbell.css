@@ -2728,7 +2728,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 2; }
-  .container:last-child {
+  .container:last-of-type {
     padding-bottom: 2.25rem; }
   .container header {
     width: 100%;
