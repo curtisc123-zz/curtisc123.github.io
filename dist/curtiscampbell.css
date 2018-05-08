@@ -2728,9 +2728,6 @@ body {
   text-align: center;
   position: relative;
   z-index: 2; }
-  @media (min-width: 768px) {
-    .container {
-      padding: 20rem 1.125rem; } }
   .container:last-of-type {
     padding-bottom: 2.25rem; }
   .container header {
@@ -2749,7 +2746,7 @@ body {
       margin: 0 auto; } }
   @media (min-width: 768px) {
     .container {
-      padding: 9rem 2.25rem;
+      padding: 20rem 2.25rem;
       text-align: left; } }
 
 .background-icons {
