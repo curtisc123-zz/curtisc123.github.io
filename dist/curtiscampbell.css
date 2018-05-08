@@ -2728,6 +2728,9 @@ body {
   text-align: center;
   position: relative;
   z-index: 2; }
+  @media (min-width: 768px) {
+    .container {
+      padding: 20rem 1.125rem; } }
   .container:last-of-type {
     padding-bottom: 2.25rem; }
   .container header {

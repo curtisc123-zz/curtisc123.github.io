@@ -39,6 +39,10 @@ body {
   position: relative;
   z-index: 2;
 
+  @include media(tablet) {
+    padding: 20rem $baseSpacing / 2;
+  }
+
   &:last-of-type {
     padding-bottom: $baseSpacing;
   }
