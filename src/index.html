@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   </head>
   <body>
     <div class="background-icons hidden">
@@ -20,7 +21,7 @@
       <img src="assets/images/video.svg" alt="Film" />
     </div>
     <section class="container" id="hero" data-bg="#a748f7">
-      <header class="animated bounceIn">
+      <header class="wow bounceIn">
           <h1 class="no-pad">Hello<span class="highlight">.</span></h1>
           <p>I'm Curtis, a front end web developer and aspiring photographer in Vancouver, BC.</p>
           <p>This is a work in progress, but feel free to look around.</p>
@@ -36,32 +37,78 @@
     <section class="container" id="about" data-bg="#2ad69b">
       <div class="content">
           <header>
-              <h1>A Little About Me<span class="highlight">.</span></h1>
+              <h1 class="wow bounceIn">A Little About Me<span class="highlight">.</span></h1>
           </header>
 
-          <p>Well, who am I even? I’ve got about 10 years experience as a web developer. I
+          <p class="wow bounceIn">Well, who am I even? I’ve got about 10 years experience as a web developer. I
               started my career in Kelowna BC at an agency as a designer and coder.
               I worked on a lot of stuff there. I moved to Vancouver in 2012 to for a job
               and for my now wife’s animation career.</p>
-          <p>I’m not just a developer though, I like lots of things. I’m an avid movie-goer
+          <p class="wow bounceIn">I’m not just a developer though, I like lots of things. I’m an avid movie-goer
             and asipring photographer, filmmaker and pianist. I dabble in video games, a bit of a
             beer conniseur and I’m way too into comics and pop culture.</p>
         </div>
     </section>
 
-    <!-- <section class="container" id="timeline" data-bg="#1eadff">
+    <section class="container" id="timeline" data-bg="#1eadff">
       <header>
-          <h1 class="animated bounceIn">A History Lesson<span class="highlight">.</span></h1>
+          <h1 class="wow bounceIn">A History Lesson<span class="highlight">.</span></h1>
       </header>
-      <p>About me text</p>
-    </section> -->
+
+      <div class="timeline">
+        <div class="timeline-item wow bounceIn">
+          <h2>1988 <img src="../src/assets/images/beetlejuie.png" alt="I was born this year."></h2>
+          <p>It's showtime!</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2006</h2>
+          <p>Graduate high school, brief emo phase...interesting time.</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2008</h2>
+          <p>Finish art school, pass resumes out at all Starbucks in 50km radius (they weren’t hiring).</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2009 <img src="../src/assets/images/navigator.png" alt="Navigator Multimedia Inc."></h2>
+          <p>Navigator Multimedia in the hooouse! My first job industry job.</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2011</h2>
+          <p>Attempt freelancing. Should have saved emo phase.</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2012 <img src="../src/assets/images/ea.png" alt="Electronic Arts Inc."></h2>
+          <p>Major change ahead! Move to Vancouver. Begin work at Electronic Arts.</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2015 <img src="../src/assets/images/redstamp.png" alt="Redstamp.co"></h2>
+          <p>Let’s try start up life, eh? Head to Red Stamp Agency.</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2016 <img src="../src/assets/images/bbtv.png" alt="BroadbandTV Corp"></h2>
+          <p>BroadbandTV is calling! Head there as a senior front end developer</p>
+        </div>
+
+        <div class="timeline-item wow bounceIn">
+          <h2>2018 <img src="../src/assets/images/ea.png" alt="Electronic Arts Inc."></h2>
+          <p>Back to EA</p>
+        </div>
+      </div>
+    </section>
 
     <section class="container" id="skills" data-bg="#2e46fe">
       <div class="content">
           <header>
-              <h1 class="animated bounceIn">What Can I Do<span class="highlight">?</span></h1>
+              <h1 class="wow bounceIn">What Can I Do<span class="highlight">?</span></h1>
           </header>
-          <ul>
+          <ul class="wow bounceIn">
             <li>HTML</li>
             <li>CSS/SCSS/Less</li>
             <li>JS/TS</li>
@@ -70,7 +117,7 @@
             <li>React/Angular/Vue</li>
           </ul>
 
-          <ul>
+          <ul class="wow bounceIn">
             <li>Git</li>
             <li>JIRA</li>
             <li>Sketch</li>
@@ -79,7 +126,7 @@
             <li>Premiere Pro</li>
           </ul>
 
-          <ul>
+          <ul class="wow bounceIn">
             <li>Mentorship</li>
             <li>Project Management</li>
             <li>Agile/Scrum Certified</li>
@@ -90,16 +137,16 @@
     <section class="container" id="contact" data-bg="#f841ff">
       <div class="content">
         <header>
-            <h1 class="animated bounceIn">Contact Me<span class="highlight">.</span></h1>
+            <h1 class="wow bounceIn">Contact Me<span class="highlight">.</span></h1>
         </header>
-        <div>
+        <div class="wow bounceIn">
             <p>Like what you see? Cool! I like you too. Feel free to shoot me an
             <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a>, fill out the form or view
             <a href="https://www.linkedin.com/in/campbellcurtis" title="Click for best profile ever." target="_blank">LinkedIn</a>.</p>
             <p>If you want to check out some of my photography and film, be sure check to
             check out my <a href="#" target="_blank" title="Instagram">Instagram</a>.</p>
         </div>
-        <form action="https://formspree.io/campbell123@gmail.com" method="POST">
+        <form class="wow bounceIn" action="https://formspree.io/campbell123@gmail.com" method="POST">
           <fieldset>
             <label for="name">Your name</label>
             <input type="text" name="eame" placeholder="Your name"/>
@@ -115,7 +162,7 @@
             <textarea name="message" placeholder="What do you need?"></textarea>
           </fieldset>
 
-          <input type="submit" name="Submit" value="Send it!"/>
+          <input type="submit" name="Submit" value="Send it"/>
         </form>
       </div>
     </section>

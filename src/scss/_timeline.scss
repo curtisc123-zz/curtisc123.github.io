@@ -1,6 +1,79 @@
 #timeline.container {
   a,
   .highlight {
-    color: #2ad69b;
+    color: #ffe115;
+  }
+
+  .timeline {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: $baseSpacing * 4 0;
+    position: relative;
+
+    @include media(tablet) {
+      &:after {
+        content: "";
+        display: block;
+        width: 180px;
+        height: 100%;
+        background: url("../assets/images/curve.png") repeat-y center top / 100% auto;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        opacity: 0.2;
+      }
+    }
+
+    .timeline-item {
+      width: 80%;
+      padding: 0 0 $baseSpacing * 4;
+      display: flex;
+      flex-flow: row wrap;
+
+      @include media(tablet) {
+        width: 35%;
+      }
+
+      h2 {
+        width: 100%;
+        color: #ffe115;
+        font-size: 2.5rem;
+        position: relative;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+
+      img {
+        width: 60px;
+        position: absolute;
+        top: auto;
+      }
+
+      &:nth-child(odd) {
+        align-self: flex-start;
+        text-align: right;
+        justify-content: flex-end;
+
+        img {
+          right: -75px;
+          transform: rotate(10deg);
+        }
+      }
+
+      &:nth-child(even) {
+        align-self: flex-end;
+        text-align: left;
+        justify-content: flex-start;
+
+        img {
+          left: -75px;
+          transform: rotate(-10deg);
+        }
+      }
+    }
   }
 }

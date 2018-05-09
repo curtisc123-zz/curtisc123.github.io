@@ -30,6 +30,7 @@
     "webpack-dev-server": "^3.1.1"
   },
   "dependencies": {
-    "animate.css": "^3.6.1"
+    "animate.css": "^3.6.1",
+    "wowjs": "^1.1.3"
   }
 }

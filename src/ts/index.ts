@@ -5,6 +5,8 @@ import {
 
 import './../scss/index.scss';
 
+declare var WOW: any; // wow.js;
+
 interface Container {
   scrollTop: number;
   scrollBottom: number;
@@ -156,6 +158,7 @@ class CurtisCampbell {
 
   attachEventListeners () {
     document.addEventListener('scroll', this.onScroll);
+    new WOW().init();
   }
 
   onScroll = (e: Event) => {
