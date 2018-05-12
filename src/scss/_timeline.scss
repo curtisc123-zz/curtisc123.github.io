@@ -56,14 +56,17 @@
       padding: 0.5rem;
       font-size: 1rem;
       color: #000;
-      position: absolute;
-      top: 100%;
-      z-index: 2;
       opacity: 0;
       height: 0;
       overflow: hidden;
       transition: opacity 0.15s;
       cursor: default;
+
+      @include media(tablet) {
+        position: absolute;
+        top: 100%;
+        z-index: 2;
+      }
     }
 
     h2 {

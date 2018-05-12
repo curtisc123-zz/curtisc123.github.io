@@ -2637,14 +2637,16 @@ a {
       padding: 0.5rem;
       font-size: 1rem;
       color: #000;
-      position: absolute;
-      top: 100%;
-      z-index: 2;
       opacity: 0;
       height: 0;
       overflow: hidden;
       transition: opacity 0.15s;
       cursor: default; }
+      @media (min-width: 768px) {
+        .timeline .timeline-item .timeline-item-snippet {
+          position: absolute;
+          top: 100%;
+          z-index: 2; } }
     .timeline .timeline-item h2 {
       width: 100%;
       color: #ffe115;
