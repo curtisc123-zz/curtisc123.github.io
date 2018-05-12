@@ -168,8 +168,6 @@ class CurtisCampbell {
       element.addEventListener('click', this.onTimelineItemClicked);
     });
 
-    new WOW().init();
-
     this.loader.classList.add('hidden');
   }
 
@@ -206,6 +204,7 @@ class CurtisCampbell {
 
   onLoaderHidden = () => {
     this.loader.style.display = 'none';
+    new WOW().init();
   }
 }
 
