@@ -19,6 +19,7 @@ class CurtisCampbell {
   private iconsContainer: HTMLDivElement;
   private faces: HTMLImageElement[];
   private timelineItems: HTMLDivElement[];
+  private loader: HTMLDivElement;
 
   constructor () {
     this.initialize();
@@ -37,6 +38,7 @@ class CurtisCampbell {
     this.faces = nodeListToArray(document.querySelectorAll('.face img'));
     this.iconsContainer =  document.querySelector('.background-icons');
     this.timelineItems = nodeListToArray(document.querySelectorAll('.timeline-item'));
+    this.loader = document.querySelector('.loader');
 
     this.faces.forEach((element) => {
       const image = new Image();
@@ -161,12 +163,14 @@ class CurtisCampbell {
 
   attachEventListeners () {
     document.addEventListener('scroll', this.onScroll);
-
+    this.loader.addEventListener('transitionend', this.onLoaderHidden);
     this.timelineItems.forEach((element: HTMLDivElement) => {
       element.addEventListener('click', this.onTimelineItemClicked);
     });
 
     new WOW().init();
+
+    this.loader.classList.add('hidden');
   }
 
   onScroll = (e: Event) => {
@@ -198,6 +202,10 @@ class CurtisCampbell {
 
       item.classList.add(displayClass);
     }
+  }
+
+  onLoaderHidden = () => {
+    this.loader.style.display = 'none';
   }
 }
 
