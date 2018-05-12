@@ -2739,12 +2739,14 @@ textarea {
   height: 3.375rem;
   background: #fff;
   border: none;
+  border-radius: 0;
   padding: 1rem 0.5rem;
   font-size: 1.25rem;
   font-family: "Source Sans Pro", sans-serif;
   resize: none;
   color: #222;
-  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25); }
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-appearance: none; }
   input:active, input:focus,
   textarea:active,
   textarea:focus {
@@ -2756,8 +2758,7 @@ textarea {
 input[type=submit] {
   width: auto;
   padding: 0 2rem;
-  cursor: pointer;
-  appearance: none; }
+  cursor: pointer; }
 
 ::-moz-placeholder,
 ::-ms-input-placeholder,
