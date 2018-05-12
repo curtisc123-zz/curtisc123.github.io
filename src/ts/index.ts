@@ -1,6 +1,7 @@
 import {
   randomNumber,
   nodeListToArray,
+  isTouch,
 } from './helpers';
 
 import './../scss/index.scss';
@@ -17,6 +18,7 @@ class CurtisCampbell {
   private containers: Container[];
   private iconsContainer: HTMLDivElement;
   private faces: HTMLImageElement[];
+  private timelineItems: HTMLDivElement[];
 
   constructor () {
     this.initialize();
@@ -34,6 +36,7 @@ class CurtisCampbell {
     this.containers = [];
     this.faces = nodeListToArray(document.querySelectorAll('.face img'));
     this.iconsContainer =  document.querySelector('.background-icons');
+    this.timelineItems = nodeListToArray(document.querySelectorAll('.timeline-item'));
 
     this.faces.forEach((element) => {
       const image = new Image();
@@ -158,6 +161,11 @@ class CurtisCampbell {
 
   attachEventListeners () {
     document.addEventListener('scroll', this.onScroll);
+
+    this.timelineItems.forEach((element: HTMLDivElement) => {
+      element.addEventListener('click', this.onTimelineItemClicked);
+    });
+
     new WOW().init();
   }
 
@@ -173,6 +181,23 @@ class CurtisCampbell {
         document.body.style.backgroundColor = container.bgColor;
       }
     });
+  }
+
+  onTimelineItemClicked = (e: Event) => {
+    const displayClass = 'snippet-display';
+    const item = e.srcElement.parentElement;
+
+    if (item.classList.contains(displayClass)) {
+      item.classList.remove(displayClass);
+    } else {
+      this.timelineItems.forEach((element: HTMLDivElement) => {
+          if (item !== element) {
+            element.classList.remove(displayClass);
+          }
+      });
+
+      item.classList.add(displayClass);
+    }
   }
 }
 

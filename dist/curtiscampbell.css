@@ -2594,7 +2594,83 @@ a {
 
 #timeline.container a,
 #timeline.container .highlight {
-  color: #2ad69b; }
+  color: #ffe115; }
+
+.timeline {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 9rem 0;
+  position: relative; }
+  @media (min-width: 768px) {
+    .timeline:after {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 100%;
+      background: url(5a156f8bd06853d6464021e49b69b567.png) repeat-y center top/100% auto;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+      opacity: 0.2; } }
+  .timeline .timeline-item {
+    width: 80%;
+    margin: 0 0 9rem;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    cursor: pointer; }
+    @media (min-width: 768px) {
+      .timeline .timeline-item {
+        width: 35%; } }
+    .timeline .timeline-item.snippet-display .timeline-item-snippet {
+      opacity: 1;
+      height: auto; }
+    .timeline .timeline-item .timeline-item-snippet {
+      border-radius: 4px;
+      border: 4px solid black;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background: white;
+      padding: 1rem;
+      margin: 0;
+      padding: 0.5rem;
+      font-size: 1rem;
+      color: #000;
+      position: absolute;
+      top: 100%;
+      z-index: 2;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      transition: opacity 0.15s;
+      cursor: default; }
+    .timeline .timeline-item h2 {
+      width: 100%;
+      color: #ffe115;
+      font-size: 2.5rem;
+      position: relative; }
+    .timeline .timeline-item p {
+      font-size: 1.4rem;
+      padding: 0 0 1rem; }
+    .timeline .timeline-item img {
+      width: 60px;
+      position: absolute;
+      top: auto; }
+    .timeline .timeline-item:nth-child(odd) {
+      align-self: flex-start;
+      text-align: right;
+      justify-content: flex-end; }
+      .timeline .timeline-item:nth-child(odd) img {
+        right: -75px;
+        transform: rotate(10deg); }
+    .timeline .timeline-item:nth-child(even) {
+      align-self: flex-end;
+      text-align: left;
+      justify-content: flex-start; }
+      .timeline .timeline-item:nth-child(even) img {
+        left: -75px;
+        transform: rotate(-10deg); }
 
 #skills.container a,
 #skills.container .highlight {
@@ -2729,7 +2805,10 @@ body {
   position: relative;
   z-index: 2; }
   .container:last-of-type {
-    padding-bottom: 2.25rem; }
+    padding-bottom: 4.5rem; }
+    @media (min-width: 768px) {
+      .container:last-of-type {
+        padding-bottom: 6.75rem; } }
   .container header {
     width: 100%;
     text-align: center; }

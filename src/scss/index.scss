@@ -40,7 +40,11 @@ body {
   z-index: 2;
 
   &:last-of-type {
-    padding-bottom: $baseSpacing;
+    padding-bottom: $baseSpacing * 2;
+
+    @include media(tablet) {
+      padding-bottom: $baseSpacing * 3;
+    }
   }
 
   header {

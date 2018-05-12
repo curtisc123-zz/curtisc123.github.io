@@ -2,10 +2,11 @@
 <html>
   <head>
     <title>Hello, I'm Curtis</title>
-    <meta name="description" content="I'm Curtis, a web developer in Vancouver BC. This isn't quite finished yet, so be sure to check back soon.">
+    <meta name="description" content="I'm Curtis, a web developer in Vancouver BC.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" type="image/png" href="favicon.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <link href="dist/curtiscampbell.css" rel="stylesheet"></head>
   <body>
     <div class="background-icons hidden">
@@ -20,10 +21,9 @@
       <img src="dist/ef495cffa22aae6860d236c774ee5bb1.svg" alt="Film" />
     </div>
     <section class="container" id="hero" data-bg="#a748f7">
-      <header class="animated bounceIn">
+      <header class="wow bounceIn">
           <h1 class="no-pad">Hello<span class="highlight">.</span></h1>
           <p>I'm Curtis, a front end web developer and aspiring photographer in Vancouver, BC.</p>
-          <p>This is a work in progress, but feel free to look around.</p>
       </header>
       <div class="face hidden">
         <img src="dist/052989fe166d82f51a131c2814a862c4.png" alt="Curtis!" />
@@ -36,14 +36,14 @@
     <section class="container" id="about" data-bg="#2ad69b">
       <div class="content">
           <header>
-              <h1>A Little About Me<span class="highlight">.</span></h1>
+              <h1 class="wow bounceIn">A Little About Me<span class="highlight">.</span></h1>
           </header>
 
-          <p>Well, who am I even? I’ve got about 10 years experience as a web developer. I
+          <p class="wow bounceIn">Well, who am I even? I’ve got about 10 years experience as a web developer. I
               started my career in Kelowna BC at an agency as a designer and coder.
               I worked on a lot of stuff there. I moved to Vancouver in 2012 to for a job
               and for my now wife’s animation career.</p>
-          <p>I’m not just a developer though, I like lots of things. I’m an avid movie-goer
+          <p class="wow bounceIn">I’m not just a developer though, I like lots of things. I’m an avid movie-goer
             and asipring photographer, filmmaker and pianist. I dabble in video games, a bit of a
             beer conniseur and I’m way too into comics and pop culture.</p>
         </div>
@@ -51,53 +51,87 @@
 
     <section class="container" id="timeline" data-bg="#1eadff">
       <header>
-          <h1 class="animated bounceIn">A History Lesson<span class="highlight">.</span></h1>
+          <h1 class="wow bounceIn">A History Lesson<span class="highlight">.</span></h1>
       </header>
 
       <div class="timeline">
-        <div class="timeline-item">
-          <h2>1988</h2>
+        <div class="timeline-item wow bounceIn">
+          <h2>1988 <img src="dist/0a27f5dd2b8d9528134c69d6ef10a60a.png" alt="I was born this year."></h2>
           <p>It's showtime!</p>
+          <p class="timeline-item-snippet">I was born this year on December 21st.</p>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item wow bounceIn">
           <h2>2006</h2>
           <p>Graduate high school, brief emo phase...interesting time.</p>
+          <p class="timeline-item-snippet">Okanagan Mission Secondary!</p>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item wow bounceIn">
           <h2>2008</h2>
           <p>Finish art school, pass resumes out at all Starbucks in 50km radius (they weren’t hiring).</p>
+          <p class="timeline-item-snippet">My diploma is actually in 3D Animation and Art. I got this from the Centre for Arts
+            Technology in Kelowna BC. While I didn't puruse this in the end, the experience was invaluable to my career.
+          </p>
         </div>
 
-        <div class="timeline-item">
-          <h2>2009</h2>
+        <div class="timeline-item wow bounceIn">
+          <h2>2009 <img src="dist/4621d1725f63c6a49175107ec1b56368.png" alt="Navigator Multimedia Inc."></h2>
           <p>Navigator Multimedia in the hooouse! My first job industry job.</p>
+          <p class="timeline-item-snippet">My position here was to work as a developer
+            and web/graphic designer. I was mostly
+            slicing up PSD designs either myself or
+            other designers had done. I also dabbled a
+            bit in WordPress development and other
+            custom CMS solutions. My main skills used
+            here were HTML, CSS and jQuery.</p>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item wow bounceIn">
           <h2>2011</h2>
           <p>Attempt freelancing. Should have saved emo phase.</p>
         </div>
 
-        <div class="timeline-item">
-          <h2>2012</h2>
+        <div class="timeline-item wow bounceIn">
+          <h2>2012 <img src="dist/781e594b1886cd31f13a0d95aa4b272a.png" alt="Electronic Arts Inc."></h2>
           <p>Major change ahead! Move to Vancouver. Begin work at Electronic Arts.</p>
+          <p class="timeline-item-snippet">A lot to say about this one. I did a ton here! I mostly worked on FIFA
+            a front end developer on the Ultimate Team Companion App for mobile. This was a massive project that was
+            completed by a team of six devs, and is still ongoing. It's a Cordova based mobile app written with a custom
+            JS framework, and uses Less.js. My main role was to work on the CSS and markup, but I did work in the JS quite
+            a bit. I also worked in their marketing department on easports.com for a few months bfore getting a bit of Unity
+            and C# experience working on a mobile game called Sundown Boogie Frights,
+            which unfortunately is no longer live, on the EA Mobile Game team</p>
         </div>
 
-        <div class="timeline-item">
-          <h2>2015</h2>
+        <div class="timeline-item wow bounceIn">
+          <h2>2015 <img src="dist/009a03115820f4de6e25aa5950ad3b40.png" alt="Redstamp.co"></h2>
           <p>Let’s try start up life, eh? Head to Red Stamp Agency.</p>
+          <p class="timeline-item-snippet">After gaining a metric f*** ton of experience at EA, I wanted to try
+            something totally different. I met the great guys at Redstamp and worked with them for a little under
+            a year. I coded websites for clients, marketing materials and did a bit of product work in Vue.js.
+            While I ultimately decided the brand new start up life wasn't quite for me, I had a good experience
+            and got to work with some very smart people.
+          </p>
         </div>
 
-        <div class="timeline-item">
-          <h2>2016</h2>
+        <div class="timeline-item wow bounceIn">
+          <h2>2016 <img src="dist/38118eea0751465a320ebe6a2e68f393.png" alt="BroadbandTV Corp"></h2>
           <p>BroadbandTV is calling! Head there as a senior front end developer.</p>
+          <p class="timeline-item-snippet">My time at BBTV was a huge learning experience for me. I had my
+            first real introduction into React and Chrome Extensions. I also began working as a Scrum Master
+            and dev lead on a team working on a pretty large project. It was pretty chaotic for me in a good
+            way. I worked and shipped 4 projects that are currently being used in the company. VISO Catalyst
+            for Chrome, VISO, and two internal tools for sales.
+          </p>
         </div>
 
-        <div class="timeline-item">
-          <h2>2018</h2>
-          <p>Unexpectedly, back to EA! At least for the next few months.</p>
+        <div class="timeline-item wow bounceIn">
+          <h2>2018 <img src="dist/781e594b1886cd31f13a0d95aa4b272a.png" alt="Electronic Arts Inc."></h2>
+          <p>Back to EA! At least for the next little while..until the next adventure!</p>
+          <p class="timeline-item-snippet">I took a little break and needed to get back into something I know for awhile.
+            I'm working again on the Ultimate Team Companion Apps now on a contract.
+          </p>
         </div>
       </div>
     </section>
@@ -105,9 +139,9 @@
     <section class="container" id="skills" data-bg="#2e46fe">
       <div class="content">
           <header>
-              <h1 class="animated bounceIn">What Can I Do<span class="highlight">?</span></h1>
+              <h1 class="wow bounceIn">What Can I Do<span class="highlight">?</span></h1>
           </header>
-          <ul>
+          <ul class="wow bounceIn">
             <li>HTML</li>
             <li>CSS/SCSS/Less</li>
             <li>JS/TS</li>
@@ -116,7 +150,7 @@
             <li>React/Angular/Vue</li>
           </ul>
 
-          <ul>
+          <ul class="wow bounceIn">
             <li>Git</li>
             <li>JIRA</li>
             <li>Sketch</li>
@@ -125,7 +159,7 @@
             <li>Premiere Pro</li>
           </ul>
 
-          <ul>
+          <ul class="wow bounceIn">
             <li>Mentorship</li>
             <li>Project Management</li>
             <li>Agile/Scrum Certified</li>
@@ -136,32 +170,32 @@
     <section class="container" id="contact" data-bg="#f841ff">
       <div class="content">
         <header>
-            <h1 class="animated bounceIn">Contact Me<span class="highlight">.</span></h1>
+            <h1 class="wow bounceIn">Contact Me<span class="highlight">.</span></h1>
         </header>
-        <div>
+        <div class="wow bounceIn">
             <p>Like what you see? Cool! I like you too. Feel free to shoot me an
-            <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a>, fill out the form or view
+            <a href="mailto:campbell123@gmail.com" title="You know you want to.">email</a>, fill out the form or view my
             <a href="https://www.linkedin.com/in/campbellcurtis" title="Click for best profile ever." target="_blank">LinkedIn</a>.</p>
             <p>If you want to check out some of my photography and film, be sure check to
-            check out my <a href="#" target="_blank" title="Instagram">Instagram</a>.</p>
+            check out my <a href="https://instagram.com/curtis.a.campbell" target="_blank" title="Instagram">Instagram</a>.</p>
         </div>
-        <form action="https://formspree.io/campbell123@gmail.com" method="POST">
+        <form class="wow bounceIn" action="https://formspree.io/campbell123@gmail.com" method="POST">
           <fieldset>
             <label for="name">Your name</label>
-            <input type="text" name="eame" placeholder="Your name"/>
+            <input type="text" name="eame" placeholder="Your name" required />
           </fieldset>
 
           <fieldset>
             <label for="email">Your email</label>
-            <input type="email" name="email" placeholder="Your email"/>
+            <input type="email" name="email" placeholder="Your email" required/>
           </fieldset>
 
           <fieldset>
             <label for="message">What do you need?</label>
-            <textarea name="message" placeholder="What do you need?"></textarea>
+            <textarea name="message" placeholder="What do you need?" required></textarea>
           </fieldset>
 
-          <input type="submit" name="Submit" value="Send it!"/>
+          <input type="submit" name="Submit" value="Send it"/>
         </form>
       </div>
     </section>

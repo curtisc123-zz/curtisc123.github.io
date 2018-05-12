@@ -6,7 +6,12 @@ const nodeListToArray = (list: NodeList) => {
   return Array.prototype.slice.call(list);
 };
 
+const isTouch = () => {
+  return (('ontouchstart' in window) || (navigator.msMaxTouchPoints > 0));
+};
+
 export {
   randomNumber,
   nodeListToArray,
+  isTouch,
 };
