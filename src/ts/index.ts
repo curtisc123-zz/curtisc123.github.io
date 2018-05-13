@@ -56,6 +56,8 @@ class CurtisCampbell {
     this.setupBackground();
     this.setupContainers();
     this.attachEventListeners();
+
+    new WOW().init();
   }
 
   setupBackground () {
@@ -204,7 +206,6 @@ class CurtisCampbell {
 
   onLoaderHidden = () => {
     this.loader.style.display = 'none';
-    new WOW().init();
   }
 }
 
