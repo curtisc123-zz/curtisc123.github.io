@@ -33,7 +33,6 @@ class CurtisCampbell {
                 https://www.flaticon.com/authors/freepik for more!`);
 
     let facesCounter = 0;
-
     this.containers = [];
     this.faces = nodeListToArray(document.querySelectorAll('.face img'));
     this.iconsContainer =  document.querySelector('.background-icons');
@@ -56,8 +55,6 @@ class CurtisCampbell {
     this.setupBackground();
     this.setupContainers();
     this.attachEventListeners();
-
-    new WOW().init();
   }
 
   setupBackground () {
@@ -133,16 +130,11 @@ class CurtisCampbell {
     const timer = 500;
     let currentIndex = 0;
 
-    facesContainer.classList
-      .remove('hidden');
-
-    setTimeout(() => {
       facesContainer.classList
       .add('animated');
 
       facesContainer.classList
         .add('bounceIn');
-    }, 0);
 
     setInterval(() => {
       this.faces.forEach((element: HTMLElement) => element.classList.add('hidden'));
@@ -150,6 +142,9 @@ class CurtisCampbell {
       currentIndex = currentIndex < this.faces.length - 1 ?
         currentIndex + 1 : 0;
     }, timer);
+
+    facesContainer.classList.remove('hidden');
+    this.loader.classList.add('hidden');
   }
 
   setupContainers () {
@@ -169,8 +164,6 @@ class CurtisCampbell {
     this.timelineItems.forEach((element: HTMLDivElement) => {
       element.addEventListener('click', this.onTimelineItemClicked);
     });
-
-    this.loader.classList.add('hidden');
   }
 
   onScroll = (e: Event) => {
