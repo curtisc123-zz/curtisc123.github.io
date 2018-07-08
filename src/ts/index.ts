@@ -55,6 +55,8 @@ class CurtisCampbell {
     this.setupBackground();
     this.setupContainers();
     this.attachEventListeners();
+
+    const wow = new WOW().init();
   }
 
   setupBackground () {
@@ -130,11 +132,8 @@ class CurtisCampbell {
     const timer = 500;
     let currentIndex = 0;
 
-      facesContainer.classList
-      .add('animated');
-
-      facesContainer.classList
-        .add('bounceIn');
+    facesContainer.classList.add('animated');
+    facesContainer.classList.add('bounceIn');
 
     setInterval(() => {
       this.faces.forEach((element: HTMLElement) => element.classList.add('hidden'));
