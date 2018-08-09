@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Hello, I'm Curtis</title>
     <meta name="description" content="I'm Curtis, a web developer in Vancouver BC. This isn't quite finished yet, so be sure to check back soon.">
@@ -11,8 +11,6 @@
   <body>
     <div class="loader">Setting stuff up...</div>
     <div class="background-icons hidden">
-      <img src="assets/images/computer-1.svg" alt="Tech" />
-      <img src="assets/images/computer.svg" alt="Tech" />
       <img src="assets/images/cup.svg" alt="Coffee" />
       <img src="assets/images/drink.svg" alt="Beer" />
       <img src="assets/images/game.svg" alt="Gaming" />
@@ -183,17 +181,17 @@
         <form class="wow bounceIn" action="https://formspree.io/campbell123@gmail.com" method="POST">
           <fieldset>
             <label for="name">Your name</label>
-            <input type="text" name="eame" placeholder="Your name" required />
+            <input type="text" id="name" name="eame" placeholder="Your name" required />
           </fieldset>
 
           <fieldset>
             <label for="email">Your email</label>
-            <input type="email" name="email" placeholder="Your email" required/>
+            <input type="email" id="email" name="email" placeholder="Your email" required/>
           </fieldset>
 
           <fieldset>
             <label for="message">What do you need?</label>
-            <textarea name="message" placeholder="What do you need?" required></textarea>
+            <textarea name="message" id="message" placeholder="What do you need?" required></textarea>
           </fieldset>
 
           <input type="submit" name="Submit" value="Send it"/>
